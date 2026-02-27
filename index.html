@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 진로체험 참여자 현황 등록</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <span>진로체험 프로그램</span>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <h1>2026 진로체험 프로그램<br>참여자 현황 등록</h1>
+      <p>담당 조교 및 참여 교원 정보를 정확히 입력해 주세요.</p>
+    </div>
+
+    <form id="mainForm" novalidate>
+
+      <div class="card">
+        <div class="card-title">담당 조교 정보</div>
+        <div class="field-group">
+          <label class="field-label">담당 조교명 <span class="required">*</span></label>
+          <input type="text" id="taName" class="field-input" placeholder="예) 홍길동" maxlength="20" />
+          <span class="error-msg" id="err-taName"></span>
+        </div>
+        <div class="field-group">
+          <label class="field-label">사번 <span class="required">*</span></label>
+          <input type="text" id="taId" class="field-input" placeholder="예) 2024123456" maxlength="20" inputmode="numeric" />
+          <span class="error-msg" id="err-taId"></span>
+        </div>
+        <div class="field-group">
+          <label class="field-label">조교 연락처 <span class="required">*</span></label>
+          <input type="tel" id="taPhone" class="field-input" placeholder="예) 010-1234-5678" maxlength="13" inputmode="numeric" />
+          <span class="error-msg" id="err-taPhone"></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">트랙 정보</div>
+        <div class="field-group">
+          <label class="field-label">트랙명 <span class="required">*</span></label>
+          <input type="text" id="trackName" class="field-input" placeholder="예) 기계공학트랙" maxlength="50" />
+          <span class="error-msg" id="err-trackName"></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">참여 교원 정보</div>
+        <p class="card-desc">참여하는 교원을 모두 입력해 주세요. (최대 8명)</p>
+        <div id="teacherList"></div>
+        <button type="button" id="addTeacherBtn" class="btn-add">+ 교원 추가</button>
+        <span class="error-msg" id="err-teachers"></span>
+      </div>
+
+      <div class="submit-area">
+        <button type="submit" id="submitBtn" class="btn-submit">제출하기</button>
+        <p class="submit-note">제출 후에는 수정이 불가합니다.</p>
+      </div>
+
+    </form>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <div class="modal-icon">✓</div>
+      <h2 class="modal-title">제출이 완료되었습니다</h2>
+      <p class="modal-desc">참여자 현황이 정상적으로 등록되었습니다.<br>감사합니다.</p>
+      <button class="btn-submit" onclick="location.reload()">새로 입력하기</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
