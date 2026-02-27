@@ -1,5 +1,5 @@
 // ── Google Apps Script 배포 URL (배포 후 여기에 입력) ──
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyXZOlGc9WKp1EDUH3t3MrYRrrSEXrVUjKQz-rjvsj-u0uVYLr_028JGW7TUG8ZxLSmkQ/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxnhiFihpeQPztLAAjRZVdKRQL7GTX3UtewDB_BxS0f8elmuEp4NNzPxmN-1V_qQuHmKg/exec';
 
 // ── 교원 카운터 ──
 let teacherCount = 0;
