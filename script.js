@@ -42,7 +42,7 @@ function addTeacher() {
     </div>
     <div>
       <span class="sub-label">사번 <span class="required">*</span></span>
-      <input type="text" class="field-input t-id" placeholder="2024123456" maxlength="20" inputmode="numeric" />
+      <input type="text" class="field-input t-id" placeholder="405669" maxlength="20" inputmode="numeric" />
       <span class="error-msg t-id-err"></span>
     </div>
     <div>
